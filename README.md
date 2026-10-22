@@ -15,12 +15,15 @@ Marinara Engine의 AI 메시지 동작 줄에 그림 아이콘을 하나 더해�
    - Settings → Advanced → Danger Zone에서 **Allow third-party extension imports**를 켜요.
    - 에이전트 받기에서 **Illustrator**를 설치해요.
    - 이미지 생성 연결을 지정해요. Illustrator 에이전트에 지정하거나, Settings → 연결 → 기본값 → 이미지에 지정하면 돼요.
-2. Settings → Addons → External Extensions에서 **`illustrate_here.extension.json`**을 가져와요.
+2. 아래 셋 중 편한 방법으로 가져와요.
+   - **json 파일 하나로**: `illustrate_here.json`을 받아 Settings → Addons → External Extensions에서 가져와요.
+   - **GitHub 저장소 연결로**: GitHub 저장소에서 확장을 받는 관리 도구를 쓰면 이 저장소 주소를 넣어요. `manifest.json`을 찾아 설치해요.
+   - **ZIP으로**: Code → Download ZIP으로 받아 **Import Extension File**로 가져와요. 압축을 풀었다면 **Import Extension Folder**로 폴더를 골라도 돼요.
 3. 검토 화면에서 **Full page access**를 확인하고 승인해요.
 4. 페이지를 새로고침해요.
 
-> `illustrate_here.js`를 그대로 가져오면 엔진이 샌드박스 확장으로 등록해서 아이콘이 뜨지 않아요.
-> 꼭 `.extension.json`으로 가져오세요. 이미 `.js`로 가져왔다면 확장 편집 화면에서 Full page access를 켜고 다시 승인하면 돼요.
+> `illustrate_here.js`만 따로 가져오면 엔진이 샌드박스 확장으로 등록해서 아이콘이 뜨지 않아요.
+> json 파일, 저장소 연결, 폴더(ZIP)째 가져오기 중 하나로 가져오세요.
 
 ## 쓰는 법
 

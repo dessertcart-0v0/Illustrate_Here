@@ -1,0 +1,12 @@
+{
+  "kind": "marinara.personal-extension",
+  "version": 1,
+  "config": {
+    "name": "Illustrate Here",
+    "version": "1.0.0",
+    "description": "AI 메시지 동작 줄의 그림 아이콘으로, 원하는 턴에 일러스트레이터 에이전트를 불러 그 장면을 그립니다.",
+    "runtime": "client",
+    "capabilities": ["full_page_access"],
+    "jsPath": "illustrate_here.js"
+  }
+}
